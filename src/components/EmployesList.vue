@@ -1,5 +1,5 @@
 <template>
-    <div class="emulated-flex-gap" v-for="item of  employe.splice(15)  " :key="item.id">
+    <div class="emulated-flex-gap" v-for="item of  employe.slice(0,5)  " :key="item.id">
          <div>
             <li><img :src="item.image" alt=""></li>
             <li class="name">{{item.name }}</li>
@@ -15,12 +15,20 @@
 import data from '../helper/data'
 export default {
     name: "App",
+    
     data() {
         return {
             employe: data,
+            number:5,
+            firstDizi:"",
+            secondDizi:""
         };
     },
-
+    methods:{
+        Next(){
+           alert("fggdfdff")
+        }
+    }
 };
 </script>
 
