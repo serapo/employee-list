@@ -1,5 +1,5 @@
 <template>
-    <div class="emulated-flex-gap" v-for="item of  employe.slice(0,5)  " :key="item.id">
+    <div class="emulated-flex-gap" v-for="item of  employe.slice(5,10)  " :key="item.id">
          <div>
             <li><img :src="item.image" alt=""></li>
             <li class="name">{{item.name }}</li>
@@ -25,9 +25,13 @@ export default {
         };
     },
     methods:{
-        Next(){
-           alert("fggdfdff")
-        }
+        NextClick(first,second){
+        this.firstDizi=first,
+        this.secondDizi=second
+        console.log(this.firstDizi)
+        //console.log(this.newStatuId,this.newStatuRadio)
+
+      }
     }
 };
 </script>

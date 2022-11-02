@@ -3,9 +3,9 @@
     <div class="container">
         <h1>Employee List</h1>
         <span >Employees {{first }} to {{second}} </span>
-        <employesList  @next="Next"/>
+        <employesList  :Next="Next"/>
         <button @click="Prev" type="button" class="btn btn-primary">Prev</button>
-        <button @click="Next" type="button" class="btn btn-primary">Next</button>
+        <button @click="clicked" type="button" class="btn btn-primary">Next</button>
     </div>
 </div>
 </template>
@@ -25,14 +25,15 @@ export default {
     },
     methods : {
       Next(){
-      if(this.first==16  && this.second==20 ) {
-        this.first =1
-        this.second =5      
-      }
-      else{
-        this.first +=5
-        this.second +=5
-      }
+      // if(this.first==16  && this.second==20 ) {
+      //   this.first =1
+      //   this.second =5      
+      // }
+      // else{
+      //   this.first +=5
+      //   this.second +=5
+      // }
+      console.log("kfkfkff")
       
       },
       Prev (){
