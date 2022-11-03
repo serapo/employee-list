@@ -68,7 +68,7 @@ button {
 .container {
     position: relative;
     background-color: black;
-    width: 50%;
+    width: 60%;
     height: 90vh;
     display: flex;
     border-radius: 70px;
