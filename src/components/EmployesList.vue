@@ -1,6 +1,6 @@
 <template>
-     <p>{{aciklama}}</p>
-<div class="emulated-flex-gap" v-for="item of  employe.slice(5,10)  " :key="item.id">
+     <p>{{firstDizi}}</p>
+<div class="emulated-flex-gap" v-for="item of  employe.slice(firstDizi,secondDizi)  " :key="item.id">
     
     <div>
         <li><img :src="item.image" alt=""></li>
@@ -23,11 +23,11 @@ export default {
         return {
             employe: data,
             number: 5,
-            firstDizi: "",
-            secondDizi: ""
+            
+            
         };
     },
-    props:["aciklama"],
+    props:["firstDizi", "secondDizi"],
     watch: {
         Next() {
             console.log("jvkkdffd")
