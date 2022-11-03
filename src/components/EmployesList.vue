@@ -1,6 +1,6 @@
 <template>
-     <p>{{firstDizi}}</p>
-<div class="emulated-flex-gap" v-for="item of  employe.slice(firstDizi,secondDizi)  " :key="item.id">
+   
+<div class="emulated-flex-gap" v-for="item of  employe.slice(firstDizi-1,secondDizi)  " :key="item.id">
     
     <div>
         <li><img :src="item.image" alt=""></li>
